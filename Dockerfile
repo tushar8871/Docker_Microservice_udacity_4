@@ -13,7 +13,10 @@ COPY . app.py /app/
 # hadolint ignore=DL3013
 RUN pip install --upgrade pip &&\
 	pip install --trusted-host pypi.python.org -r requirements.txt
-	
-EXPOSE 80
 
-RUN ["python3","app.py"]
+## Complete Step 4:
+Expose 80
+
+## Complete Step 5:
+# Run app.py at container launch
+CMD ["python3", "app.py"]
