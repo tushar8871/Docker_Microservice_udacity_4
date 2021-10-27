@@ -2,6 +2,7 @@ Flask
 numpy
 pandas
 click
+wheel
 scikit-learn
 pylint
 joblib
