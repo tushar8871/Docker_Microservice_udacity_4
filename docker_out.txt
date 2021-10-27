@@ -1,0 +1,12 @@
+[2021-10-27 07:57:36,982] INFO in app: JSON payload: {'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
+[2021-10-27 07:57:36,994] INFO in app: Inference payload DataFrame:    CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2021-10-27 07:57:37,009] INFO in app: Scaling Payload:    CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+/usr/local/lib/python3.7/site-packages/sklearn/preprocessing/data.py:645: DataConversionWarning: Data with input dtype int64, float64 were all converted to float64 by StandardScaler.
+  return self.partial_fit(X, y)
+/app/app.py:19: DataConversionWarning: Data with input dtype int64, float64 were all converted to float64 by StandardScaler.
+  scaled_adhoc_predict = scaler.transform(payload)
+[2021-10-27 07:57:37,025] INFO in app: output prediction: 
+[20.35373177134412]
+172.17.0.1 - - [27/Oct/2021 07:57:37] "POST /predict HTTP/1.1" 200 -
