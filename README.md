@@ -22,3 +22,30 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 **The final implementation of the project will showcase your abilities to operationalize production microservices.**
 
 ---
+
+### Setup the Environment
+*Create a virtualenv and activate it by executing `python3 -m venv dockermicroservice`
+*Source the virtual environment: `source dockermicroservice/bin/activate`
+*Run `make install` to install the necessary dependencies
+
+####Running app.py
+*Manual: `python3 app.py`
+*Run in Docker: `./run_docker.sh`
+*Run in Kubernetes: `./upload_docker.sh && ./run_kubernetes.sh`
+
+####Kubernetes Steps
+*Setup and Configure Docker locally
+*Setup and Configure Kubernetes locally
+*https://minikube.sigs.k8s.io/docs/start/
+*https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
+*Create Flask app in Container using `kubectl apply -f ./flask-deploy.yaml`
+*Run via kubectl
+
+
+
+
+
+
+
+
+
