@@ -47,5 +47,27 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 
 
 
+## Setup the Environment
+
+* Create a virtualenv and activate it by executing `python3 -m venv venv`
+* Source the virtual environment: `source venv/bin/activate`
+* Run `make install` to install the necessary dependencies
+
+### Running `app.py`
+
+1. Manual:  `python app.py`
+2. Run in Docker:  `./run_docker.sh`
+3. Run in Kubernetes:  `./upload_docker.sh && ./run_kubernetes.sh`
+
+### Kubernetes Steps
+
+* Setup and Configure Docker locally
+* Setup and Configure Kubernetes locally
+* https://minikube.sigs.k8s.io/docs/start/
+* https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
+* Start minikube `minikube start`
+* Check Config of cluster `kubectl config view`
+* Create Flask app in Container using `kubectl apply -f ./flask-deploy.yaml`
+* Run `./make_prediction.sh` for prediction output.
 
 
