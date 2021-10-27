@@ -5,5 +5,4 @@ click
 wheel
 scikit-learn
 pylint
-joblib
 sklearn
