@@ -1,3 +1,27 @@
+Step 5/6 : Expose 80
+ ---> Running in f37ca80b03e7
+Removing intermediate container f37ca80b03e7
+ ---> bda20f6e3778
+Step 6/6 : CMD ["python3", "app.py"]
+ ---> Running in 352d791f92bd
+Removing intermediate container 352d791f92bd
+ ---> 79be23c0096d
+Successfully built 79be23c0096d
+Successfully tagged flask:latest
+REPOSITORY                    TAG             IMAGE ID       CREATED                  SIZE
+flask                         latest          79be23c0096d   Less than a second ago   1.4GB
+tushar887/flask               latest          d69801fbfaba   2 hours ago              1.33GB
+gcr.io/k8s-minikube/kicbase   v0.0.27         9fa1cc16ad6d   5 weeks ago              1.08GB
+python                        3.7.3-stretch   34a518642c76   2 years ago              929MB
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 273-063-404
 [2021-10-27 07:57:36,982] INFO in app: JSON payload: {'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
 [2021-10-27 07:57:36,994] INFO in app: Inference payload DataFrame:    CHAS     RM    TAX  PTRATIO      B  LSTAT
 0     0  6.575  296.0     15.3  396.9   4.98
